@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@keyframes intro {
+    100% {opacity:.5;}
+    50% {opacity:1;width: 100%;}
+    0% {opacity:0;width: 110%;}
+}
+@keyframes introText{
+    0% {transform: scale(1.5);filter: blur(10px);opacity: 0;}
+    100% {transform: scale(1) translateY(-50%);opacity: 1;}
+}
+@keyframes introBox{
+    0% {transform: scale(1.2);filter: blur(10px);opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+@keyframes decolourize {
+    0% {background-color: black}
+    100% {background-color: white;}
+}
+@keyframes slideDown{
+    from{top: -10%;opacity:0} 
+    to{top:0;opacity:1}
+}
+
+@media only screen and (max-width: 1265px) {
+    body {
+        padding-top: 77.3047px;
+    }
+    .main, #pointboxes, .about-section {
+        display: none !important;
+    }
+    .menu li {
+        display: none;
+    }
+    #navbar {
+        justify-content: center !important;
+        animation: none !important;
+        top: 0 !important;
+    }
+    .power {
+        animation: none !important;
+    }
+    #warning {
+        display: block !important;
+    }
+}
+html {
+   background-color: black;
+}
+
+#warning {
+    display: none;
+    height: 100%;
+    width: 780px;
+    margin: auto auto;
+    border-radius: 30px;
+}
+.prompt {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+#err-sign {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.warn-prompt {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.header-img {
+ width: auto;
+ height: 500px;
+ overflow: hidden;
+ background-color: black;
+ text-align: center;
+ position: relative;
+ 
+}
+.himg {
+ display: block;
+ margin: 0 auto;
+ width: 100%;
+ opacity: .5;
+ z-index: -1;
+ animation: 3s ease normal backwards intro;
+ animation-delay: 0s;
+}
+.party-name {
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    height: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: 1s ease normal forwards introText;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.name-image {
+    display: inline-block;
+}
+.party-name h1{
+    display: inline;
+    text-align:center;
+    font-family: 'Squada One', cursive;
+    font-size:70px;
+    font-weight: 200;
+}
+
+#pointboxes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+}
+#point {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+    display: block;
+}
+
+.text1, .text2, .text3 {
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 0;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+}
+
+.box1 {
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/PR_Photo_GettyImages-1139332434.jpeg);
+    background-size: cover;
+    background-position: 0 -300px;
+    opacity: 0;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 3s;
+}
+.box2 {
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(assets/vaxlive_crowd_ethanjudelsonforglobalcitizen_013.jpg);
+    background-size: cover;
+    background-position: 0 -200px;
+    opacity: 0;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 3.25s;
+}
+.box3 {
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/credit-union-diversity.jpeg);
+    background-size: cover;
+    background-position: 0 -200px;
+    opacity: 0;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 3.5s;
+}
+
+
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + #main {
+    padding-top: 60px;
+  }
+
+.about-section {
+    height: 200px;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+}
+.about-container {
+    height: 142.500px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about-section-button {
+    height: 60px;
+    width: 315px;
+    display: block;
+    background-color: #005698;
+    color: white;
+    padding: 15px 100px;
+    font-size: 25px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: .2s ease-in-out;
+}
+.about-section-button:hover {
+    background-color: #2681f2;
+    transition: .2s ease-in-out;
+}
+.about-text-container {
+    display: block;
+    width: auto;
+    font-size: 20px;
+    margin-left: 75px;
+}

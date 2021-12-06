@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@keyframes introBox{
+    0% {transform: scale(1.2);filter: blur(10px);opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+@keyframes introText{
+    0% {font-size: 80px;filter: blur(10px);opacity: 0;}
+    100% {font-size: 70px;opacity: 1;}
+}
+@keyframes oops {
+    from {background-color: #111;}
+    to {background-color: #fff;}
+}
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+ @keyframes swift {
+    from {
+        background-position: -200%;
+        opacity: 1
+    }
+    to {
+        background-position: 0 0;
+        opacity: 0;
+    }
+}
+ @keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: .5s ease-in-out;
+}
+body.dark-theme {
+    background-color: #111;
+    color: white;
+    transition: .5s ease-in-out;
+}
+#lightswitch.dark-theme, .cls1.dark-theme {
+    fill: white;
+    transition: .5s ease-in-out;
+}
+#text {
+    color: black;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 1s;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+    #lightswitch, .cls1 {
+        fill: white;
+        transition: .5s ease-in-out;
+    }
+    #text {
+        color: #fff;
+        transition: .5s ease-in-out;
+    }
+    body.light-theme {
+        background-color: white;
+        color: black;
+        transition: .5s ease-in-out;
+    }
+    #lightswitch.light-theme, .cls1.light-theme {
+        fill: black;
+        transition: .5s ease-in-out;
+        transform: rotate(180deg);
+    }
+    #text.light-theme {
+        color: black;
+        transition: .5s ease-in-out;
+    }
+}
+
+.lightswitch {
+    position: fixed;
+    margin-left: 150px;
+    height: 30px;
+    width: 30px;
+}
+
+.char{
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+#header {
+    margin-top: 77.3047px;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/court_gavel.jpeg);
+    background-size: cover;
+    background-position: 0 -700px;
+    opacity: 0;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 0s;
+}
+.name-header{
+    text-align:center;
+    line-height:300px;
+    height:300px;
+    font-size:70px;
+    animation: 1s ease normal forwards introText;
+    animation-delay: 0s;
+    opacity: 0;
+    color: white;
+}
+#bodyText {
+    padding: 10% 15% 
+}
+
+h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom:1rem;
+}
+p {
+    display: block;
+    font-size: 2em;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1em;
+}
+.body {
+    position: relative;
+}
+@media (prefers-color-scheme: dark) {
+    .cool-lookin-overlay {
+    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(17,17,17,1) 80%, rgba(17,17,17,0) 100%);
+    background-size: 100% 400%;
+    background-position: 100% 100%;
+    opacity: 0;
+    animation: 1s ease normal backwards swift;
+    animation-delay: 1.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+}
+@media (prefers-color-scheme: light) {
+    .cool-lookin-overlay {
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+    background-size: 100% 400%;
+    background-position: 100% 100%;
+    opacity: 0;
+    animation: 1s ease normal backwards swift;
+    animation-delay: 1.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+}

@@ -1,0 +1,23 @@
+<div class="text1">
+              <h1>
+                FREEDOM
+              </h1>
+              <h2>
+                We are a legion dedicated to allowing the freedom of being one's self.
+              </h2>
+            </div>
+
+<h1>ORDER</h1>
+            <h2>
+              The safety of our citizens are a priority to the Statera Party and we are committed to protecting it.
+            </h2>
+
+            <h1>
+            FLEXIBILITY
+            </h1>
+            <h2>
+            We ensure to the citizens of America that our form of government will be designed in a way that benefits everyone.
+            </h2>
+
+<!--img class="freedom" src="assets/PR_Photo_GettyImages-1139332434.jpeg"-->
+<!--img class="order" src="assets/vaxlive_crowd_ethanjudelsonforglobalcitizen_013.jpg"-->
