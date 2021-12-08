@@ -29,7 +29,7 @@ body.dark-theme {
     transition: .5s ease-in-out;
 }
 #text {
-    color: black;
+    color: white;
     animation: 1.5s ease normal forwards introBox;
     animation-delay: 1s;
     opacity: 0;
@@ -52,7 +52,7 @@ body.dark-theme {
     }
     body.light-theme {
         background-color: white;
-        color: black;
+        color: white;
         transition: .5s ease-in-out;
     }
     #lightswitch.light-theme, .cls1.light-theme {
@@ -61,7 +61,7 @@ body.dark-theme {
         transform: rotate(180deg);
     }
     #text.light-theme {
-        color: black;
+        color: white;
         transition: .5s ease-in-out;
     }
 }
@@ -134,4 +134,9 @@ body.dark-theme {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     background-color: #000;
+    text-indent: 40px;
+}
+
+.content p {
+    margin: 10px;
 }
