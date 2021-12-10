@@ -28,12 +28,24 @@ body.dark-theme {
     fill: white;
     transition: .5s ease-in-out;
 }
-#text {
+.content {
+    margin-bottom: 50px;
+    padding: 0 30px;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    background-color: rgb(210, 210, 210);
+    text-indent: 40px;
+}
+.content.dark-theme {
+    background-color: #000;
     color: white;
-    animation: 1.5s ease normal forwards introBox;
-    animation-delay: 1s;
-    opacity: 0;
-    transition: .5s ease-in-out;
+}
+
+.content p {
+    margin: 10px;
+    line-height: 1.2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +74,16 @@ body.dark-theme {
     }
     #text.light-theme {
         color: white;
+        transition: .5s ease-in-out;
+    }
+    .content {
+        background-color: #000;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+    .content.light-theme {
+        background-color: rgb(210, 210, 210);
+        color: black;
         transition: .5s ease-in-out;
     }
 }
@@ -110,8 +132,11 @@ body.dark-theme {
     transition: 0.2s ease-in-out;
   }
   
-  .active, .collapsible:hover {
+  .collapsible:hover {
     background-color: #0075ce;
+  }
+  .active {
+    background-color: #1f50ff;
   }
   
   .collapsible:after {
@@ -125,18 +150,3 @@ body.dark-theme {
   .active:after {
     content: "\2212";
   }
-  
-  .content {
-    margin-bottom: 50px;
-    padding: 0 30px;
-    font-size: 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    background-color: #000;
-    text-indent: 40px;
-}
-
-.content p {
-    margin: 10px;
-}

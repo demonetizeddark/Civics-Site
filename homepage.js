@@ -1,5 +1,19 @@
-window.onbeforeunload = function () {
+/* window.onbeforeunload = function () {
   window.scrollTo(0, 0);
+} */
+
+document.addEventListener("resize", check())
+
+function check() {
+  const screenLimit = window.matchMedia("max-width: 1265px")
+  if (screenLimit.matches){
+    play()
+  }
+}
+
+function play() {
+  var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+  audio.play();
 }
 
 function err604() {
