@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@keyframes introBox{
+    0% {transform: scale(1.2);filter: blur(10px);opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+@keyframes introText{
+    0% {font-size: 80px;filter: blur(10px);opacity: 0;}
+    100% {font-size: 70px;opacity: 1;}
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: .5s ease-in-out;
+}
+body.dark-theme {
+    background-color: #111;
+    color: white;
+    transition: .5s ease-in-out;
+}
+.lightswitch {
+    position: fixed;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+}
+#lightswitch.dark-theme {
+    fill: white;
+    transition: .5s ease-in-out;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+    #lightswitch {
+        fill: white;
+        transition: .5s ease-in-out;
+    }
+    #text {
+        color: #fff;
+        transition: .5s ease-in-out;
+    }
+    body.light-theme {
+        background-color: white;
+        color: white;
+        transition: .5s ease-in-out;
+    }
+    #lightswitch.light-theme {
+        fill: black;
+        transition: .5s ease-in-out;
+        transform: rotate(180deg);
+    }
+    #text.light-theme {
+        color: white;
+        transition: .5s ease-in-out;
+    }
+}
+
+#header {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--oppPicture);
+    background-size: cover;
+    background-position: 0 170%;
+    opacity: 0;
+    animation: 1.5s ease normal forwards introBox;
+    animation-delay: 0s;
+}
+.name-header{
+    text-align:center;
+    line-height:300px;
+    height:300px;
+    font-size:70px;
+    animation: 1s ease normal forwards introText;
+    animation-delay: 0s;
+    opacity: 0;
+    color: white;
+}

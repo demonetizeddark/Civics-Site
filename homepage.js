@@ -61,8 +61,6 @@ window.location.href="video/video.html"; //page to redirect if password entered 
 else
 {
 alert("This password is incorrect. Please try again.")
-escape;
-
 }
 }
 }
