@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.querySelector("#ad").onclick = function() {adAccess()}
+document.querySelector(".footer-links > #ad").onclick = function() {adAccess()}
 
 function adAccess(){
   var s ="";
@@ -60,7 +61,12 @@ window.location.href="video/video.html"; //page to redirect if password entered 
 }
 else
 {
-alert("This password is incorrect. Please try again.")
+  if(s == "null" || s == null || s == "" ) {
+   return; 
+  }
+  else{
+    alert("This password is incorrect. Please try again.")
+  }
 }
 }
 }
