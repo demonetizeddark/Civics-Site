@@ -13,10 +13,10 @@ function executeAccess() {
 function adAccess(){
     var s ="";
   
-  while (s!= "statera")
+  while (s!= "morbidium")
   {
   s=prompt("This page is password protected. Please enter the site password.");
-  if (s=="statera")
+  if (s=="morbidium")
   {
   window.location.href="/Civics-Site/video/video.html"; //page to redirect if password entered is correct
   
