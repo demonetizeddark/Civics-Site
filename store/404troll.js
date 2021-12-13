@@ -18,7 +18,7 @@ function adAccess(){
   s=prompt("This page is password protected. Please enter the site password.");
   if (s=="statera")
   {
-  window.location.href="/video/video.html"; //page to redirect if password entered is correct
+  window.location.href="/Civics-Site/video/video.html"; //page to redirect if password entered is correct
   
   }
   else
