@@ -1,7 +1,3 @@
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    getElementById('body').style.display = 'none';
-}
-
 const mq = window.matchMedia( "(max-width: 1265px)" );
 var errArray = [
     "4",
