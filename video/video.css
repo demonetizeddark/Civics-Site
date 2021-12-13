@@ -11,7 +11,7 @@ html, body {
   .background-container {
       height: 100%;
       width: 100%;
-    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(4,4,4,0.7) 100%), url(/assets/American_Flag_Crowd.png);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(4,4,4,0.7) 100%), url(/Civics-Site/assets/American_Flag_Crowd.png);
     background-size: cover;
     background-position: center center;
     animation: 1.5s ease normal forwards introBox;
