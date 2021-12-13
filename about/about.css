@@ -113,7 +113,7 @@ body.dark-theme {
 
 #header {
     margin-top: 77.3047px;
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/court_gavel.jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Civics-Site/assets/court_gavel.jpeg);
     background-size: cover;
     background-position: 0 -700px;
     opacity: 0;
