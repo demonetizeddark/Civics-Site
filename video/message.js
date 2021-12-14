@@ -4,7 +4,7 @@ function message() {
         var msg = "Before this video starts, I would like to say the following message:"
         msg += newLine
         msg += newLine
-        msg += "Mr. Frescas, you've been an outstanding opponent in this race, but I believe it's time for people to know who you really are."
+        msg += "Good luck, Frescas."
         alert(msg)
     }, 3000);
     setTimeout(function() {
